@@ -4,7 +4,7 @@
     margin: 2% 3% 0% 3%;
 }
 
-.wrapper-titleNavBar {
+.wrapper-instructionsNavBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,8 +41,9 @@ td {
     overflow: hidden;
 }
 
-th:nth-child(7), td:nth-child(7) {
-width: 350px;
+th:nth-child(7),
+td:nth-child(7) {
+    width: 350px;
 }
 
 tbody,

@@ -7,7 +7,8 @@ export class Intervention {
     topRoom: string;
     topIntervention: string;
 
-    constructor(surgeon: string, topSpecialty: string, interventionCount: string, topAnesthetist: string, topNurse: string, topRoom: string, topIntervention: string) {
+    constructor(surgeon: string, topSpecialty: string, interventionCount: string,
+        topAnesthetist: string,topNurse: string, topRoom: string, topIntervention: string) {
         this.surgeon = surgeon;
         this.topSpecialty = topSpecialty;
         this.interventionCount = interventionCount;

@@ -1,12 +1,12 @@
 <h4 class="interventionsTitle"> Interventions </h4>
-<div class="wrapper-titleNavBar">
+
+<div class="wrapper-instructionsNavBar">
     <p class="instructions">Scrollez (avant / arrière) pour faire défiler les pages.</p>
     <nav class="navbar">
         <input type="text" name="surgeon" [(ngModel)]="surgeon" (ngModelChange)="searchSurgeon()"
         placeholder="Recherchez votre praticien">
     </nav>
 </div>
-
 
 <div class="interventions-container" (wheel)="onWheel($event)">
     <table class="interventionsArray">
@@ -17,7 +17,7 @@
                 <th>Interventions</th>
                 <th>Anesthesiste</th>
                 <th>Infirmière</th>
-                <th class="NumberRow">Salle</th>
+                <th>Salle</th>
                 <th>Acte</th>
             </tr>
         </thead>
@@ -29,7 +29,7 @@
                     <td>{{ intervention.interventionCount }}</td>
                     <td>{{ intervention.topAnesthetist }}</td>
                     <td>{{ intervention.topNurse }}</td>
-                    <td class="NumberRow">{{ intervention.topRoom }}</td>
+                    <td>{{ intervention.topRoom }}</td>
                     <td>{{ intervention.topIntervention }}</td>
                 </tr>
             </ng-container>
