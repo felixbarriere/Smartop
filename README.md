@@ -6,7 +6,6 @@
 installation:
 
 code
-
 npm install yarn
 
 `cd back && yarn add express mongoose dotenv nodemon`
