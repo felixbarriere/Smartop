@@ -3,10 +3,9 @@
 ### To launch the project:
 
 #### back
-installations
+installation:
 
 `npm install yarn`
-
 `cd back && yarn add express mongoose dotenv nodemon`
 
 launching the server:
@@ -14,7 +13,8 @@ launching the server:
 `yarn start`
 
 #### front
-installations
+installations:
+
 Open another terminal
 
 `cd front && yarn add ng2-search-filter ngx-pagination`
