@@ -36,3 +36,5 @@ launching the interface
 ```
 ng serve
 ```
+
+Go to "http://localhost:4200/" and enjoy!
