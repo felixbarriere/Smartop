@@ -2,7 +2,7 @@
 
 ### To launch the project:
 
-#### back
+#### **back**
 installation:
 
 ```
