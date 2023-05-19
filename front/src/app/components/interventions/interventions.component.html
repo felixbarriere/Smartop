@@ -1,0 +1,41 @@
+<h4 class="interventionsTitle"> Interventions </h4>
+<div class="wrapper-titleNavBar">
+    <p class="instructions">Scrollez (avant / arrière) pour faire défiler les pages.</p>
+    <nav class="navbar">
+        <input type="text" name="surgeon" [(ngModel)]="surgeon" (ngModelChange)="searchSurgeon()"
+        placeholder="Recherchez votre praticien">
+    </nav>
+</div>
+
+
+<div class="interventions-container" (wheel)="onWheel($event)">
+    <table class="interventionsArray">
+        <thead>
+            <tr>
+                <th>Surgeon</th>
+                <th>Spécialité</th>
+                <th>Interventions</th>
+                <th>Anesthesiste</th>
+                <th>Infirmière</th>
+                <th class="NumberRow">Salle</th>
+                <th>Acte</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let intervention of interventionsData | paginate: {itemsPerPage:10, currentPage:p};">
+                <tr>
+                    <td>{{ intervention.surgeon }}</td>
+                    <td>{{ intervention.topSpecialty }}</td>
+                    <td>{{ intervention.interventionCount }}</td>
+                    <td>{{ intervention.topAnesthetist }}</td>
+                    <td>{{ intervention.topNurse }}</td>
+                    <td class="NumberRow">{{ intervention.topRoom }}</td>
+                    <td>{{ intervention.topIntervention }}</td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+    <div class="pagination">
+        <pagination-controls (pageChange) = "p = $event"></pagination-controls>
+    </div>
+</div>

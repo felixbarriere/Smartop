@@ -1,0 +1,10 @@
+.sidebar-logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+  }
+  
+  .sidebar-logo {
+    width: 50%;
+    min-width: 30px;
+  }
