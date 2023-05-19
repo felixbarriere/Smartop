@@ -4,9 +4,12 @@
 
 #### back
 installation:
+
+```
    
 npm install yarn
-   
+
+``` 
 `cd back && yarn add express mongoose dotenv nodemon`
 
 launching the server:
