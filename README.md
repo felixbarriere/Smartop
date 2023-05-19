@@ -7,9 +7,13 @@ installation:
 
 ```
 npm install yarn
+```
+add a dotenv file and put your secured informations in it:
+```
+cd back && touch .env
 ``` 
 ```
-cd back && yarn add express mongoose dotenv nodemon
+yarn add express mongoose dotenv nodemon
 ```
 
 launching the server:
