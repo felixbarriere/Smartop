@@ -18,8 +18,8 @@ launching the server:
 yarn start
 ```
 
-#### front
-installations:
+#### **front**
+installation:
 
 Open another terminal
 
